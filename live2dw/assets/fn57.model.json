@@ -1,0 +1,181 @@
+{
+  "version": "Sample 1.0.0",
+  "name": "fn57",
+  "model": "fn57.model.moc",
+  "textures": [
+    "model.1024/texture_00.png"
+  ],
+  "hit_areas": [
+    {
+      "name": "head",
+      "id": "D_REF_HEAD"
+    },
+    {
+      "name": "diao",
+      "id": "D_REF_DIAO"
+    },
+    {
+      "name": "hand",
+      "id": "D_REF_HAND"
+    },
+    {
+      "name": "body",
+      "id": "upperbody"
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "mtn/idle.mtn",
+        "fade_in": 2000,
+        "fade_out": 2000
+      }
+    ],
+    "tap_head": [
+      {
+        "file": "mtn/touch_1.mtn",
+        "sound": "snd/FN57_0_OPERATIONBEGIN_JP.mp3"
+      },
+      {
+        "file": "mtn/touch_2.mtn",
+        "sound": "snd/FN57_0_DIALOGUE3_JP.mp3",
+        "fade_in": 2000
+      },
+      {
+        "file": "mtn/touch_3.mtn",
+        "sound": "snd/FN57_0_DIALOGUE2_JP.mp3"
+      },
+      {
+        "file": "mtn/touch_4.mtn",
+        "sound": "snd/FN57_0_OPERATIONOVER_JP.mp3"
+      },
+      {
+        "file": "mtn/touch_5.mtn",
+        "sound": "snd/FN57_0_DIALOGUE1_JP.mp3"
+      }
+    ],
+    "tap_diao": [
+      {
+        "file": "mtn/wait_1.mtn",
+        "sound": "snd/FN57_0_TIP_JP.mp3"
+      },
+      {
+        "file": "mtn/wait_2.mtn",
+        "sound": "snd/FN57_0_TITLECALL_JP.mp3"
+      }
+    ],
+    "shake": [
+      {
+        "file": "mtn/shake.mtn",
+        "sound": "snd/FN57_0_MOOD2_JP.mp3",
+        "fade_in": 500
+      }
+    ],
+    "tap_body": [
+      {
+        "name": "1",
+        "sound": "snd/FN57_0_ACCEPT_JP.mp3"
+      },
+      {
+        "name": "2",
+        "sound": "snd/FN57_0_AGREE_JP.mp3"
+      },
+      {
+        "name": "3",
+        "sound": "snd/FN57_0_APPRECIATE_JP.mp3"
+      },
+      {
+        "name": "4",
+        "sound": "snd/FN57_0_ATTACK_JP.mp3"
+      },
+      {
+        "name": "5",
+        "sound": "snd/FN57_0_BLACKACTION_JP.mp3"
+      },
+      {
+        "name": "6",
+        "sound": "snd/FN57_0_BREAK_JP.mp3"
+      },
+      {
+        "name": "7",
+        "sound": "snd/FN57_0_BUILDOVER_JP.mp3"
+      },
+      {
+        "name": "8",
+        "sound": "snd/FN57_0_COMBINE_JP.mp3"
+      },
+      {
+        "name": "9",
+        "sound": "snd/FN57_0_DEFENSE_JP.mp3"
+      },
+      {
+        "name": "10",
+        "sound": "snd/FN57_0_FEED_JP.mp3"
+      },
+      {
+        "name": "11",
+        "sound": "snd/FN57_0_FEELING_JP.mp3"
+      },
+      {
+        "name": "12",
+        "sound": "snd/FN57_0_FIX_JP.mp3"
+      },
+      {
+        "name": "13",
+        "sound": "snd/FN57_0_FORMATION_JP.mp3"
+      },
+      {
+        "name": "14",
+        "sound": "snd/FN57_0_GAIN_JP.mp3"
+      },
+      {
+        "name": "15",
+        "sound": "snd/FN57_0_GOATTACK_JP.mp3"
+      },
+      {
+        "name": "16",
+        "sound": "snd/FN57_0_LOADING_JP.mp3"
+      },
+      {
+        "name": "17",
+        "sound": "snd/FN57_0_LOWMOOD_JP.mp3"
+      },
+      {
+        "name": "18",
+        "sound": "snd/FN57_0_MEET_JP.mp3"
+      },
+      {
+        "name": "19",
+        "sound": "snd/FN57_0_MOOD1_JP.mp3"
+      },
+      {
+        "name": "20",
+        "sound": "snd/FN57_0_PHRASE_JP.mp3"
+      },
+      {
+        "name": "21",
+        "sound": "snd/FN57_0_RETREAT_JP.mp3"
+      }
+    ],
+    "start": [
+      {
+        "file": "mtn/login.mtn",
+        "sound": "snd/FN57_0_HELLO_JP.mp3"
+      }
+    ],
+    "flick_hand": [
+      {
+        "file": "mtn/wedding.mtn",
+        "sound": "snd/FN57_0_SOULCONTRACT_JP.mp3"
+      },
+      {
+        "file": "mtn/wedding_touch.mtn",
+        "sound": "snd/FN57_0_DIALOGUEWEDDING_JP.mp3"
+      }
+    ]
+  },
+  "physics": "fn57.physics.json",
+  "lip_sync": "true",
+  "auto_breath": false,
+  "aniso_level": 5
+}
