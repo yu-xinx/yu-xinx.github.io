@@ -395,17 +395,6 @@ var _hmt = _hmt || [];
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">•</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2020/02/22/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96github%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/02/22/免费领取github虚拟货币/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -550,56 +539,13 @@ var _hmt = _hmt || [];
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <div class="disqus-loading">
-          <strong>Disqus 加载中...</strong>
-          <p>如果长时间无法加载，请针对 disq.us | disquscdn.com | disqus.com 启用代理</p>
-        </div>
-      </div>
-    </div>
+	<div id="gitalk-container"></div>
 
   
 
 
 
 
-
-  
-
-    
-      <script type="text/javascript">
-        if (disqus_config) {
-          var disqus_config = function () {
-            this.page.url = 'http://yoursite.com/2020/02/22/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96github%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81/';
-            this.page.identifier = '2020/02/22/免费领取github虚拟货币/';
-            this.page.title = '如何免费领取GitHub虚拟货币';
-          };
-          if (window.DISQUS) {
-            $('.disqus-loading').remove();
-            window.DISQUS.reset({
-              reload: true,
-              config: function () {
-                this.page.url = 'http://yoursite.com/2020/02/22/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96github%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81/';
-                this.page.identifier = '2020/02/22/免费领取github虚拟货币/';
-                this.page.title = '如何免费领取GitHub虚拟货币';
-              }
-            });
-          }
-        }
-        else {
-          var disqus_config = function () {
-            this.page.url = 'http://yoursite.com/2020/02/22/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96github%E8%99%9A%E6%8B%9F%E8%B4%A7%E5%B8%81/';
-            this.page.identifier = '2020/02/22/免费领取github虚拟货币/';
-            this.page.title = '如何免费领取GitHub虚拟货币';
-          };
-          var d = document, s = d.createElement('script');
-          s.src = 'https://unpkg.com/embed-js';
-          s.setAttribute('data-timestamp', '' + +new Date());
-          (d.head || d.body).appendChild(s);
-        }
-      </script>
-    
 
   
 
@@ -618,6 +564,7 @@ var _hmt = _hmt || [];
 
 
 
+  
 
 
 
@@ -625,6 +572,25 @@ var _hmt = _hmt || [];
 
 
 
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'blog-comment',
+          owner: '',
+          admin: [''],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
 
