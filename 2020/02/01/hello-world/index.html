@@ -570,7 +570,7 @@ var _hmt = _hmt || [];
           repo: 'blog.comment',
           owner: 'yu-xinx',
           admin: ['yu-xinx'],
-          id: location.pathname,
+          id: md5(location.pathname),
           distractionFreeMode: 'true'
         })
         gitalk.render('gitalk-container')           
